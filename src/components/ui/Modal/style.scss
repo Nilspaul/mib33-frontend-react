@@ -1,0 +1,28 @@
+@import '../../../assets/scss/base.scss';
+
+.modal-container {
+  display: flex;
+  backdrop-filter: blur(12px);
+
+  .modal-content {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 75vw;
+    max-height: 90vh;
+    background-color: $white;
+    border-radius: 1rem;
+    padding: 1rem 5rem;
+    overflow-y: auto;
+
+    .modal-close-button {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      background-color: $green;
+      color: $white;
+      border-radius: 10px;
+      position: absolute;
+    }
+  }
+}

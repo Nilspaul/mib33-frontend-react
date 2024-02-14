@@ -1,0 +1,89 @@
+.summary {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .content {
+    padding: 1rem;
+
+    .info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .image {
+        width: 100%;
+        max-width: 40%;
+        aspect-ratio: 1/1;
+        border: 1px solid #000;
+        + .description {
+          padding-left: 2rem;
+        }
+      }
+      .description {
+        width: 100%;
+        max-width: 60%;
+      }
+    }
+  }
+
+  .pricelist {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  .price-overview {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: auto;
+    margin-bottom: 0;
+    padding: 1rem 2rem;
+
+    .item {
+      width: 30vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: flex-end;
+      font-size: 1.3rem;
+      &.total {
+        border-top: 1px solid #ccc;
+        font-size: 1.5rem;
+        padding-top: 0.5rem;
+        margin-top: 0.5rem;
+      }
+      .label {
+        display: inline-flex;
+        justify-content: flex-end;
+        line-height: 1;
+        margin-right: 3rem;
+      }
+      .value {
+        display: inline-flex;
+        justify-content: flex-end;
+        width: 60%;
+        font-size: 150%;
+        white-space: nowrap;
+        line-height: 1;
+        font-family: monospace;
+        span {
+          line-height: 1;
+          margin-right: 0.5ch;
+        }
+      }
+    }
+
+    .actions {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 1rem;
+
+      > .btn {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
